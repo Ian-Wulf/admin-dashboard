@@ -7,6 +7,11 @@
     src: url("fonts/Montserrat,Roboto/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -25,6 +30,36 @@
     background-color: rgb(25, 146, 212);
     font-family: roboto;
     color: white;
+    padding: 0.5rem 5rem 0rem 1rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4.9fr;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+}
+
+.sidebar .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+
+}
+
+.sidebar-icon {
+    fill: white;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1em;
+}
+
+.sidebar-icon:has(+ h1) {
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .main {
