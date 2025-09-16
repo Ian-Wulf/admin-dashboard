@@ -12,6 +12,25 @@
     padding: 0;
 }
 
+body {
+    font-family: roboto;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(226, 232, 240);
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(25, 146, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.5rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -23,16 +42,74 @@
 
 .header {
     grid-area: header;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
+.search {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.search-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+}
+
+.account p {
+    justify-self: center;
+}
+
+.account img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.account-icon {
+    width: 1.3em;
+    height: 1.3em;
+    justify-self: end;
+}
+
+.hello {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.hello img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+
 .sidebar {
+ 
     grid-area: sidebar;
     background-color: rgb(25, 146, 212);
     font-family: roboto;
     color: white;
     padding: 0.5rem 5rem 0rem 1rem;
     display: grid;
-    grid-template-rows: 1fr 4fr 4.9fr;
+    grid-template-rows: 1fr 3fr 4fr;
 }
 
 .sidebar h1 {
@@ -64,4 +141,5 @@
 
 .main {
     grid-area: main;
+    background-color: rgb(226, 232, 240);
 }
