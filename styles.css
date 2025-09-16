@@ -14,12 +14,25 @@
 
 body {
     font-family: roboto;
+    background-color: rgb(226, 232, 240);
+}
+
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 input {
-    border: none;
+    all: unset;
+    /* border: black solid 1px; */
     border-radius: 10px;
     background-color: rgb(226, 232, 240);
+    height: 1.5rem;
+    padding-left: 1rem;
+}
+
+input:focus {
+    border: solid 1px rgb(206, 211, 218);
 }
 
 button {
@@ -47,11 +60,16 @@ button {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+
+    padding-left: 3rem;
+    background-color: white;
+    box-shadow: 0px 3px 3px rgb(193, 198, 204);
 }
 
 .search {
     display: grid;
     grid-template-columns: 1fr 6fr;
+    align-items: center;
 }
 
 .search-icon {
@@ -80,6 +98,7 @@ button {
     width: 1.3em;
     height: 1.3em;
     justify-self: end;
+    margin-right: 1em;
 }
 
 .hello {
@@ -93,6 +112,19 @@ button {
     border-radius: 50%;
 }
 
+.hello-text {
+    font-weight:bold;
+    margin-left: 1rem;
+}
+
+.greeting {
+    font-size: small;
+}
+
+.name {
+    font-size: x-large;
+}
+
 .options {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -102,14 +134,29 @@ button {
 
 
 .sidebar {
- 
     grid-area: sidebar;
+    
     background-color: rgb(25, 146, 212);
     font-family: roboto;
     color: white;
-    padding: 0.5rem 5rem 0rem 1rem;
+    padding: 1rem 5rem 0rem 1rem;
+    
     display: grid;
-    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-rows: 5rem 15rem 25rem;
+}
+
+.sidebar-top {
+    /* display: grid; */
+    /* align-self: start; */
+}
+.sidebar-middle {
+    /* display: grid; */
+    padding-left: 0.5rem;
+}
+
+
+.sidebar-bottom {
+    /* display: grid; */
 }
 
 .sidebar h1 {
@@ -117,7 +164,7 @@ button {
 }
 
 .sidebar h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .sidebar .wrapper {
@@ -141,5 +188,43 @@ button {
 
 .main {
     grid-area: main;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: rgb(226, 232, 240);
+    margin-top: 2rem;
+}
+
+.your-projects {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.your-projects h3 {
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    border-left: 6px solid rgb(240, 180, 41);
+    border-radius: 5px;
+    height: 200px;
+    background-color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0px 3px 3px rgb(193, 198, 204);
+}
+
+.project-card p:first-child {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.project-card p:nth-child(2) {
+    font-size: 0.8rem;
+    color: rgb(99, 99, 99); 
 }
