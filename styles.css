@@ -228,13 +228,16 @@ button {
 }
 
 .project-card {
-    border-left: 6px solid rgb(240, 180, 41);
+    border-left: 7.5px solid rgb(240, 180, 41);
     border-radius: 5px;
     height: 200px;
     background-color: white;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
     box-shadow: 0px 3px 3px rgb(193, 198, 204);
 
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
 }
 
 .project-card p:first-child {
@@ -249,6 +252,18 @@ button {
     -webkit-line-clamp: 6;     
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.card-options {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-items: end;
+    align-items: end;
+}
+
+.card-icon {
+    width: 1.3em;
+    height: 1.3em;
 }
 
 .announcements {
