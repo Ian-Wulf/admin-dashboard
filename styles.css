@@ -16,7 +16,8 @@ html, body {
     font-family: roboto;
     background-color: rgb(226, 232, 240);
     height: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 
@@ -252,14 +253,14 @@ button {
 
 .announcements {
     display: grid;
-    grid-template-rows: 3fr 2fr;
-    gap: 3rem;
+    grid-template-rows: 300px 250px;
+    gap: 2rem;
 }
 
-/* .news h3 {
+ .news h3 {
     margin-bottom: 1rem;
 }
-
+/*
 .trending h3 {
     margin-bottom: 1rem;
 } */
@@ -272,13 +273,40 @@ button {
 .trending {
     display: grid;
     grid-template-rows: 1fr 5fr;
+    grid-template-columns: 14rem;
 }
 
 .news-board {
     background-color: white;
- 
     border-radius: 5px;
     box-shadow: 1.5px 3px 3px rgb(193, 198, 204);
+    padding: 0 1.5rem;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.news-board .wrapper {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(226, 232, 240);
+    border-top: 1px solid rgb(226, 232, 240);
+    display: grid;
+    align-items: center;
+}
+
+.news-board p:first-child {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.news-board p:nth-child(2) {
+    color: rgb(99, 99, 99);
+    font-size: 0.65rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;     
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .trending-board {
