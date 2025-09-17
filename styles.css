@@ -89,8 +89,8 @@ button {
 }
 
 .account img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     justify-self: center;
 }
@@ -217,7 +217,7 @@ button {
 }
 
 .your-projects h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 .project-grid {
@@ -257,30 +257,16 @@ button {
     gap: 2rem;
 }
 
- .news h3 {
-    margin-bottom: 1rem;
-}
-/*
-.trending h3 {
-    margin-bottom: 1rem;
-} */
-
 .news {
     display: grid;
     grid-template-rows: 1fr 8fr;
-}
-
-.trending {
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-template-columns: 14rem;
 }
 
 .news-board {
     background-color: white;
     border-radius: 5px;
     box-shadow: 1.5px 3px 3px rgb(193, 198, 204);
-    padding: 0 1.5rem;
+    padding: 0 0.8rem;
 
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -309,9 +295,40 @@ button {
     overflow: hidden;
 }
 
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 14rem;
+}
+
 .trending-board {
     background-color: white;
-
     border-radius: 5px;
     box-shadow: 1.5px 3px 3px rgb(193, 198, 204);
+    padding: 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+
+}
+
+.trending-board .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.trending-board img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.tag p {
+    font-size: 0.8rem;
+}
+
+.tag p:nth-child(2) {
+    color: rgb(99, 99, 99);
 }
