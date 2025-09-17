@@ -89,7 +89,8 @@ button {
 }
 
 .account p {
-    justify-self: center;
+    font-weight: bold;
+    margin-left: 0.6rem;
 }
 
 .account img {
