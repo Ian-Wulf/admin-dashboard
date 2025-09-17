@@ -69,13 +69,17 @@ button {
 
 .search {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 12fr;
     align-items: center;
 }
 
 .search-icon {
     width: 1.3em;
     height: 1.3em;
+}
+
+.search-field {
+    width: 85%;
 }
 
 .account {
